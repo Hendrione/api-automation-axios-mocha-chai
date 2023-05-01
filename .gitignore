@@ -1,0 +1,5 @@
+allure-report
+allure-results
+package-lock.json
+node_modules
+mochawesome-report

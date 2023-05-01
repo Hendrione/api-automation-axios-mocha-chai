@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "mocha-axios-chai-api-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "_mocha tests/*.js --require fixtures.js --parallel --retries 3 --reporter mochawesome --require mochawesome/register",
+    "test-allure": "_mocha tests/*.js --require fixtures.js --retries 3 --reporter mocha-allure-reporter",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
+    "chai-arrays": "^2.2.0",
+    "chai-json-schema": "^1.5.1",
+    "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-tags-ultra": "^1.0.2",
+    "mochawesome": "^7.1.3"
+  }
+}
